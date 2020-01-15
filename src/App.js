@@ -6,11 +6,8 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>The Quote Machine</h2>
+          <img src="https://cdn.glitch.com/40d7aaba-2e87-493e-88ed-181ff8a6e04a%2Fquote-machine.png?v=1579112814007" />
         </div>
-        <p className="App-intro">
-          Click "New Quote" to Refresh
-        </p>
         <QuoteBox />
       </div>
     );
@@ -38,17 +35,14 @@ class QuoteBox extends Component {
     return (
       <div className="QuoteBox" id="quote-box">
         <div id="text">{data.content}</div>
-        <div id="author">{data.author}</div>
+        <div id="author">— {data.author}</div>
         <button id="new-quote" onClick={this.fetchApi.bind(this)}>New Quote</button>
-        <a href="https://twitter.com/intent/tweet" id="tweet-quote">Tweet It</a>
       </div>
     );
   }
 
   componentDidMount() {
-    fetch('https://api.quotable.io/random')
-        .then(response => response.json())
-        .then(data => this.setState({data}));
+    this.fetchApi();
   };
 }
 

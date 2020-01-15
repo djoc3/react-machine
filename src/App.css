@@ -2,20 +2,54 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
   background-color: #F5F5F5;
-  height: 150px;
+  height: 200px;
   padding: 20px;
   color: #A0A;
 }
 
 .App-intro {
   font-size: large;
+}
+
+.QuoteBox {
+  margin: 0px auto;
+  max-width: 800px;
+  padding: 30px 20px 30px 20px;
+}
+
+#text {
+  margin-bottom: 20px;
+  font-family: Alata;
+  font-size: 20px;
+  color: #686868;
+}
+
+#author {
+  margin-bottom: 20px;
+  font-family: Alata;
+  font-size: 15px;
+  color: #686868;
+  font-style: italic;
+}
+
+#new-quote {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #9932CC; 
+  border: none;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 @keyframes App-logo-spin {
