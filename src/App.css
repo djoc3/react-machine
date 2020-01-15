@@ -41,6 +41,7 @@
 button {
   background-color: #9932CC; 
   border: none;
+  outline:none;
   color: #FFFFFF;
   font-weight: 700;
   text-transform: uppercase;
